@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-label="Published paper and notebook results summary">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <style>
+      .title{font:800 28px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .subtitle{font:500 14px Arial,Helvetica,sans-serif;fill:#475569}
+      .label{font:700 15px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .small{font:500 12.5px Arial,Helvetica,sans-serif;fill:#475569}
+      .metric{font:800 32px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .green{fill:#16a34a}.blue{fill:#0284c7}.amber{fill:#d97706}.violet{fill:#7c3aed}.red{fill:#dc2626}
+    </style>
+  </defs>
+  <rect width="1120" height="500" rx="30" fill="url(#bg)"/>
+  <text class="title" x="44" y="52">Best-of-Both Evidence Summary</text>
+  <text class="subtitle" x="44" y="78">Published paper claims are separated from notebook scaffold results to avoid overstating experiments.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="118" width="320" height="132" rx="22" fill="#ffffff"/>
+    <text class="label" x="76" y="154">Published paper benchmark</text>
+    <text class="metric green" x="76" y="202">97%</text>
+    <text class="small" x="76" y="230">Validation accuracy for optimal sensor selection</text>
+
+    <rect x="400" y="118" width="320" height="132" rx="22" fill="#ffffff"/>
+    <text class="label" x="428" y="154">Energy efficiency result</text>
+    <text class="metric amber" x="428" y="202">up to 30%</text>
+    <text class="small" x="428" y="230">Energy reduction reported against non-adaptive setup</text>
+
+    <rect x="752" y="118" width="320" height="132" rx="22" fill="#ffffff"/>
+    <text class="label" x="780" y="154">Response-time improvement</text>
+    <text class="metric violet" x="780" y="202">70%</text>
+    <text class="small" x="780" y="230">Reported improvement using edge and V2V paths</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="300" width="496" height="126" rx="22" fill="#ffffff"/>
+    <text class="label" x="76" y="336">Notebook implementation scaffold</text>
+    <text class="metric blue" x="76" y="384">99.73%</text>
+    <text class="small" x="76" y="412">Expanded synthetic dataset model accuracy after target correction</text>
+
+    <rect x="576" y="300" width="496" height="126" rx="22" fill="#ffffff"/>
+    <text class="label" x="604" y="336">Low-latency safety path examples</text>
+    <text class="small" x="604" y="370">Drowsiness sensor: 10 ms edge processing</text>
+    <text class="small" x="604" y="394">Proximity alert: 5 ms direct V2V communication</text>
+    <text class="small" x="604" y="418">Vehicle module: central-server route for non-critical data</text>
+  </g>
+
+  <text class="subtitle" x="560" y="468" text-anchor="middle">Use published results as the paper benchmark; use notebook results as reproducible synthetic demonstration.</text>
+</svg>
