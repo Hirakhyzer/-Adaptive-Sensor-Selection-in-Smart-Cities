@@ -37,21 +37,17 @@ The project focuses on:
 
 > **Research boundary:** this repository is a synthetic research and teaching scaffold. It is not traffic-signal control software, surveillance software, public-safety infrastructure, emergency-routing software, or certified smart-city deployment equipment.
 
-<p align="center">
-  <img src="assets/sensor-dashboard.svg" alt="Adaptive sensor selection paper and notebook evidence dashboard" width="94%" />
-</p>
-
 ---
 
 ## Source basis
 
-| Source | What it contributes to this README |
+| Source | What it contributes |
 |---|---|
-| Published paper | Formal AIoT framework, dynamic sensor selection method, energy layer, latency layer, experimental tables, and reported performance improvements |
-| Uploaded notebook | Executable-style scaffold for dataset generation, model training, real-time prediction, sensor renaming, power allocation, duty cycling, latency simulation, and visual analysis |
+| Published ICCC 2024 paper | Formal AIoT framework, dynamic sensor selection method, energy layer, latency layer, experimental tables, and reported performance improvements |
+| Uploaded notebook | Executable-style scaffold for synthetic dataset generation, model training, real-time prediction, sensor renaming, power allocation, duty cycling, latency simulation, and visual analysis |
 | Repository baseline | Lightweight runnable Python script, GitHub Actions smoke test, governance notes, reproducibility notes, and local SVG documentation |
 
-The README separates **published paper results** from **notebook demonstration results** so that the project looks strong without overstating what each source supports.
+This README separates **published paper results** from **notebook demonstration results** so the project looks strong without overstating what each source supports.
 
 ---
 
@@ -336,7 +332,6 @@ print("Model accuracy:", clf.score(X_test, y_test))
 .
 ├── assets/
 │   ├── banner.svg
-│   ├── sensor-dashboard.svg
 │   ├── adaptive-workflow.svg
 │   └── paper-results.svg
 ├── docs/
