@@ -1,9 +1,14 @@
 cff-version: 1.2.0
 title: "Adaptive Sensor Selection in Smart Cities"
-message: "If you use this synthetic AIoT smart-city sensor-selection lab, please cite it."
+message: "If you use this repository, please cite the published ICCC 2024 paper and this software repository."
 type: software
 authors:
-  - family-names: "Hirakhyzer"
+  - family-names: "Khyzer"
+    given-names: "Hira"
+  - family-names: "Zhang"
+    given-names: "Yu"
+  - family-names: "Rashid"
+    given-names: "Rana Muhammad"
 repository-code: "https://github.com/Hirakhyzer/-Adaptive-Sensor-Selection-in-Smart-Cities"
 license: MIT
 keywords:
@@ -12,4 +17,20 @@ keywords:
   - adaptive sensor selection
   - traffic monitoring
   - energy efficiency
+  - edge computing
+  - vehicle-to-vehicle communication
   - cyber-physical systems
+preferred-citation:
+  type: conference-paper
+  title: "Towards Smarter Cities: An Adaptive AIoT Solution with Dynamic Sensor Group Selection for Real-Time Traffic Monitoring and Energy Efficiency"
+  authors:
+    - family-names: "Khyzer"
+      given-names: "Hira"
+    - family-names: "Zhang"
+      given-names: "Yu"
+    - family-names: "Rashid"
+      given-names: "Rana Muhammad"
+  conference:
+    name: "2024 10th International Conference on Computer and Communications (ICCC)"
+  year: 2024
+  doi: "10.1109/ICCC62609.2024.10941814"
