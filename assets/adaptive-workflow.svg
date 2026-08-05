@@ -1,34 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-label="Adaptive sensor selection workflow">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-label="Adaptive AIoT framework workflow">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#eef2ff"/></linearGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 z" fill="#2563eb"/></marker>
-    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity=".12"/></filter>
-    <style>.title{font:800 27px Arial,Helvetica,sans-serif;fill:#0f172a}.label{font:700 17px Arial,Helvetica,sans-serif;fill:#0f172a}.small{font:500 13px Arial,Helvetica,sans-serif;fill:#475569}.arrow{stroke:#2563eb;stroke-width:3;marker-end:url(#arrow);fill:none}</style>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <style>
+      .title{font:800 28px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .subtitle{font:500 14px Arial,Helvetica,sans-serif;fill:#475569}
+      .label{font:700 16px Arial,Helvetica,sans-serif;fill:#0f172a}
+      .small{font:500 12.5px Arial,Helvetica,sans-serif;fill:#475569}
+      .arrow{stroke:#2563eb;stroke-width:3;marker-end:url(#arrow);fill:none}
+      .stage{fill:#ffffff;stroke:#e2e8f0;stroke-width:1.5}
+    </style>
   </defs>
-  <rect width="1100" height="430" rx="28" fill="url(#bg)"/>
-  <text class="title" x="44" y="54">Adaptive AIoT Sensor Selection Workflow</text>
-  <text class="small" x="44" y="80">Synthetic smart-city sensing pipeline for transparent energy, latency, and safety trade-off analysis.</text>
+  <rect width="1120" height="520" rx="30" fill="url(#bg)"/>
+  <text class="title" x="44" y="54">Adaptive AIoT Framework</text>
+  <text class="subtitle" x="44" y="80">Best-of-both synthesis: published paper methodology plus notebook implementation scaffold.</text>
+
   <g filter="url(#shadow)">
-    <rect x="46" y="130" width="165" height="92" rx="20" fill="#ffffff"/>
-    <text class="label" x="69" y="165">Scenario Input</text>
-    <text class="small" x="69" y="191">time, traffic,</text><text class="small" x="69" y="210">weather, visibility</text>
-    <rect x="256" y="130" width="165" height="92" rx="20" fill="#ffffff"/>
-    <text class="label" x="282" y="165">Feature Layer</text>
-    <text class="small" x="282" y="191">risk, density,</text><text class="small" x="282" y="210">energy budget</text>
-    <rect x="466" y="130" width="165" height="92" rx="20" fill="#ffffff"/>
-    <text class="label" x="492" y="165">Selection Policy</text>
-    <text class="small" x="492" y="191">choose sensor</text><text class="small" x="492" y="210">group dynamically</text>
-    <rect x="676" y="130" width="165" height="92" rx="20" fill="#ffffff"/>
-    <text class="label" x="704" y="165">Evaluation</text>
-    <text class="small" x="704" y="191">energy, latency,</text><text class="small" x="704" y="210">coverage, safety</text>
-    <rect x="886" y="130" width="165" height="92" rx="20" fill="#ffffff"/>
-    <text class="label" x="913" y="165">Audit Output</text>
-    <text class="small" x="913" y="191">figures, reports,</text><text class="small" x="913" y="210">decision trace</text>
+    <rect class="stage" x="44" y="128" width="180" height="118" rx="22"/>
+    <text class="label" x="70" y="164">Context</text>
+    <text class="small" x="70" y="190">time of day</text>
+    <text class="small" x="70" y="210">weather</text>
+    <text class="small" x="70" y="230">traffic density</text>
+
+    <rect class="stage" x="272" y="128" width="180" height="118" rx="22"/>
+    <text class="label" x="298" y="164">Priority Score</text>
+    <text class="small" x="298" y="190">weighted factors</text>
+    <text class="small" x="298" y="210">threshold τ</text>
+    <text class="small" x="298" y="230">sensor relevance</text>
+
+    <rect class="stage" x="500" y="128" width="180" height="118" rx="22"/>
+    <text class="label" x="526" y="164">Sensor Group</text>
+    <text class="small" x="526" y="190">drowsiness</text>
+    <text class="small" x="526" y="210">proximity</text>
+    <text class="small" x="526" y="230">environment + V2V</text>
+
+    <rect class="stage" x="728" y="128" width="180" height="118" rx="22"/>
+    <text class="label" x="754" y="164">Power Layer</text>
+    <text class="small" x="754" y="190">full power</text>
+    <text class="small" x="754" y="210">reduced power</text>
+    <text class="small" x="754" y="230">standby cycling</text>
+
+    <rect class="stage" x="956" y="128" width="120" height="118" rx="22"/>
+    <text class="label" x="982" y="164">Output</text>
+    <text class="small" x="982" y="190">energy</text>
+    <text class="small" x="982" y="210">latency</text>
+    <text class="small" x="982" y="230">accuracy</text>
   </g>
-  <path class="arrow" d="M211 176 L256 176"/><path class="arrow" d="M421 176 L466 176"/><path class="arrow" d="M631 176 L676 176"/><path class="arrow" d="M841 176 L886 176"/>
+
+  <path class="arrow" d="M224 187 L272 187"/>
+  <path class="arrow" d="M452 187 L500 187"/>
+  <path class="arrow" d="M680 187 L728 187"/>
+  <path class="arrow" d="M908 187 L956 187"/>
+
   <g filter="url(#shadow)">
-    <rect x="82" y="290" width="936" height="72" rx="20" fill="#ecfeff" stroke="#06b6d4" stroke-width="2"/>
-    <text class="label" x="110" y="322">Research boundary</text>
-    <text class="small" x="110" y="348">All results should be treated as synthetic decision-support signals. Real deployment requires calibrated sensors, privacy review, safety engineering, and city governance.</text>
+    <rect x="120" y="318" width="270" height="96" rx="20" fill="#ecfeff" stroke="#06b6d4"/>
+    <text class="label" x="146" y="352">Latency paths</text>
+    <text class="small" x="146" y="378">central server • edge processing</text>
+    <text class="small" x="146" y="398">direct V2V for urgent safety alerts</text>
+
+    <rect x="425" y="318" width="270" height="96" rx="20" fill="#f0fdf4" stroke="#22c55e"/>
+    <text class="label" x="451" y="352">Notebook scaffold</text>
+    <text class="small" x="451" y="378">synthetic dataset generation</text>
+    <text class="small" x="451" y="398">decision tree + visualization checks</text>
+
+    <rect x="730" y="318" width="270" height="96" rx="20" fill="#fff7ed" stroke="#f97316"/>
+    <text class="label" x="756" y="352">Published evidence</text>
+    <text class="small" x="756" y="378">accuracy, energy, and latency tables</text>
+    <text class="small" x="756" y="398">ICCC 2024 paper framing</text>
   </g>
+
+  <rect x="90" y="454" width="940" height="34" rx="17" fill="#e0e7ff" stroke="#6366f1"/>
+  <text class="small" x="560" y="476" text-anchor="middle">No deployment claim: real city use requires calibrated sensors, privacy review, safety validation, and human governance.</text>
 </svg>
