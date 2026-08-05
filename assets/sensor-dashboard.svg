@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-label="Adaptive sensor selection dashboard preview">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#ecfeff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity=".12"/></filter>
+    <style>.title{font:800 28px Arial,Helvetica,sans-serif;fill:#0f172a}.label{font:700 16px Arial,Helvetica,sans-serif;fill:#0f172a}.small{font:500 13px Arial,Helvetica,sans-serif;fill:#475569}.metric{font:800 30px Arial,Helvetica,sans-serif;fill:#0f172a}.good{fill:#16a34a}.warn{fill:#f59e0b}.bad{fill:#ef4444}</style>
+  </defs>
+  <rect width="1100" height="520" rx="28" fill="url(#bg)"/>
+  <text class="title" x="42" y="52">Adaptive Sensor Selection Dashboard</text>
+  <text class="small" x="42" y="78">Synthetic AIoT traffic monitoring scenario — decision support preview</text>
+  <g filter="url(#shadow)">
+    <rect x="42" y="112" width="226" height="112" rx="20" fill="#ffffff"/>
+    <text class="label" x="65" y="145">Energy Consumption</text>
+    <text class="metric good" x="65" y="190">-32%</text>
+    <text class="small" x="145" y="190">vs all-sensor mode</text>
+    <rect x="292" y="112" width="226" height="112" rx="20" fill="#ffffff"/>
+    <text class="label" x="315" y="145">Response Latency</text>
+    <text class="metric warn" x="315" y="190">84 ms</text>
+    <text class="small" x="404" y="190">scenario median</text>
+    <rect x="542" y="112" width="226" height="112" rx="20" fill="#ffffff"/>
+    <text class="label" x="565" y="145">Sensor Activation</text>
+    <text class="metric" x="565" y="190">3 / 6</text>
+    <text class="small" x="656" y="190">selected sensors</text>
+    <rect x="792" y="112" width="266" height="112" rx="20" fill="#ffffff"/>
+    <text class="label" x="815" y="145">Safety Confidence</text>
+    <text class="metric good" x="815" y="190">0.91</text>
+    <text class="small" x="902" y="190">visibility adjusted</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="42" y="256" width="470" height="206" rx="22" fill="#ffffff"/>
+    <text class="label" x="66" y="292">Sensor group decision</text>
+    <g transform="translate(72 324)">
+      <rect x="0" y="0" width="84" height="42" rx="12" fill="#dcfce7" stroke="#16a34a"/><text class="small" x="42" y="27" text-anchor="middle">Camera</text>
+      <rect x="104" y="0" width="84" height="42" rx="12" fill="#dcfce7" stroke="#16a34a"/><text class="small" x="146" y="27" text-anchor="middle">Radar</text>
+      <rect x="208" y="0" width="84" height="42" rx="12" fill="#fee2e2" stroke="#ef4444"/><text class="small" x="250" y="27" text-anchor="middle">LiDAR</text>
+      <rect x="312" y="0" width="84" height="42" rx="12" fill="#dcfce7" stroke="#16a34a"/><text class="small" x="354" y="27" text-anchor="middle">Loop</text>
+      <rect x="0" y="62" width="84" height="42" rx="12" fill="#fee2e2" stroke="#ef4444"/><text class="small" x="42" y="89" text-anchor="middle">Acoustic</text>
+      <rect x="104" y="62" width="84" height="42" rx="12" fill="#e0f2fe" stroke="#0284c7"/><text class="small" x="146" y="89" text-anchor="middle">Weather</text>
+    </g>
+    <text class="small" x="66" y="444">Decision rationale: keep visibility and traffic density covered while reducing redundant high-power sensing.</text>
+    <rect x="542" y="256" width="516" height="206" rx="22" fill="#ffffff"/>
+    <text class="label" x="566" y="292">Scenario risk signals</text>
+    <g transform="translate(568 324)">
+      <text class="small" x="0" y="14">Traffic density</text><rect x="140" y="0" width="300" height="16" rx="8" fill="#e5e7eb"/><rect x="140" y="0" width="246" height="16" rx="8" fill="#f59e0b"/>
+      <text class="small" x="0" y="54">Visibility</text><rect x="140" y="40" width="300" height="16" rx="8" fill="#e5e7eb"/><rect x="140" y="40" width="166" height="16" rx="8" fill="#22d3ee"/>
+      <text class="small" x="0" y="94">Weather severity</text><rect x="140" y="80" width="300" height="16" rx="8" fill="#e5e7eb"/><rect x="140" y="80" width="208" height="16" rx="8" fill="#ef4444"/>
+      <text class="small" x="0" y="134">Energy budget</text><rect x="140" y="120" width="300" height="16" rx="8" fill="#e5e7eb"/><rect x="140" y="120" width="232" height="16" rx="8" fill="#16a34a"/>
+    </g>
+    <text class="small" x="566" y="444">Synthetic dashboard values are illustrative, not measured city infrastructure performance.</text>
+  </g>
+</svg>
