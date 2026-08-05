@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Adaptive Sensor Selection in Smart Cities"
+message: "If you use this synthetic AIoT smart-city sensor-selection lab, please cite it."
+type: software
+authors:
+  - family-names: "Hirakhyzer"
+repository-code: "https://github.com/Hirakhyzer/-Adaptive-Sensor-Selection-in-Smart-Cities"
+license: MIT
+keywords:
+  - smart cities
+  - AIoT
+  - adaptive sensor selection
+  - traffic monitoring
+  - energy efficiency
+  - cyber-physical systems
